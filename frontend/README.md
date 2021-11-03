@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Projeto de controle de vendas. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Informações completas serão adicionadas quando o projeto for finalizado.
 
 ## Available Scripts
 

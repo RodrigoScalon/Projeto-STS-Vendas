@@ -1,5 +1,6 @@
 # Projeto de controle de vendas. 
 
+Projeto desenvolvido em conjunto com o Prof. Nélio Alves. Algumas modificações feitas por mim.
 Informações completas serão adicionadas quando o projeto for finalizado.
 
 ## Available Scripts

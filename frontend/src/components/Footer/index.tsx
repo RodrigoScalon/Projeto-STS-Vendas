@@ -1,12 +1,36 @@
+/* eslint-disable jsx-a11y/alt-text */
+
 const Footer = () => {
 
     return (
         <footer className="bg-dark text-center text-white">
-            <div className="container p-2 pb-0">
-                <p className="text-light">App desenvolvido por <a href="https://github.com/RodrigoScalon" target="_blank" rel="noreferrer">Rodrigo Scalon</a></p>
-                <p className="text-light">Semana Spring React - Dev. Superior<small><strong></strong><br />
-                    LinkedIn: <a href="https://linkedin.com/in/rodrigo-scalon" target="_blank" rel="noreferrer">rodrigoscalon</a></small></p>
-            </div>
+                <p className="text-light">App desenvolvido por Rodrigo Scalon.</p>
+                <div className="me-5 d-none d-lg-block">
+                <span>Entre em contato!</span> 
+                 <section className="mb-4">
+
+        <a className="btn btn-outline-light btn-floating m-1" href="http://linkedin.com/in/rodrigo-scalon" role="button"
+        ><i className="fab fa-linkedin-in"> 
+        <img height = "20em" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </i
+      ></a>
+
+      <a className="btn btn-outline-light btn-floating m-1" href="https://github.com/RodrigoScalon" role="button"
+        ><i className="fab fa-github">
+        <img height = "20em" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></i
+      ></a>
+
+      <a className="btn btn-outline-light btn-floating m-1" href="mailto:rodrigoscalon@gmail.com" role="button"
+        ><i className="fab fa-linkedin-in">
+        <img height = "20em" src= 	"https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></i
+      ></a>
+
+
+    </section>
+    
+    </div> 
+     
+
+
         </footer>
     );
 }

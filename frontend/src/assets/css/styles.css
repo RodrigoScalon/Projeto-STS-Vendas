@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap");
 :root {
-    --color-primary: #040268;
+    --color-primary: ##263238;
+    
 }
 
 html, body {
     height: 100%;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 #root {
@@ -30,3 +31,5 @@ html, body {
 .text-primary {
     color: var(--color-primary) !important;
 }
+
+

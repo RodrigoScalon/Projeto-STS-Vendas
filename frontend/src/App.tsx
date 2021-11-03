@@ -11,7 +11,7 @@ function App() {
 
       <div className="conteiner">
 
-        <h1 className="text-primary py-3"> Vendas </h1>
+        <h1 className="text-primary py-3"> Resultado de Vendas </h1>
 
         <div className="row px-3">
           <div className="col-sm-6">

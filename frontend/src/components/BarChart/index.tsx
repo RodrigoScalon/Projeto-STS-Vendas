@@ -9,9 +9,11 @@ const BarChart = () => {
         },
     };
 
-    const mockData = {
+        const mockData = {
         labels: {
+            
             categories: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
+            
         },
         series: [
             {
@@ -29,6 +31,7 @@ const BarChart = () => {
             series={mockData.series}
             type="bar"
             height="240"
+            
 
 
         />

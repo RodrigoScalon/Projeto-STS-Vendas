@@ -5,8 +5,8 @@
 }
 
 html, body {
-    background-color: #E5DADA;
-    color: #840032;
+    background-color: #F1FFE7;
+    color: #1D2D44;
     padding: 0px;
     height: 100%;
     font-family: 'Oswald', sans-serif;
@@ -32,7 +32,7 @@ html, body {
 }
 
 .text-primary {
-    color: #002642 !important;
+    color: #1A1B41 !important;
 }
 
 

@@ -1,12 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 :root {
-    --color-primary: ##263238;
+    --color-primary: #E59500;
     
 }
 
 html, body {
+    background-color: #E5DADA;
+    color: #840032;
+    padding: 0px;
     height: 100%;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 #root {
@@ -25,11 +28,11 @@ html, body {
 }
 
 .bg-primary {
-    background-color: var(--color-primary) !important;
+    background-color: #F0F4EF !important;
 }
 
 .text-primary {
-    color: var(--color-primary) !important;
+    color: #002642 !important;
 }
 
 

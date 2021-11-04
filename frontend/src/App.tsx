@@ -16,7 +16,7 @@ function App() {
         <div className="row px-3">
           <div className="col-sm-6">
 
-            <h5 className="text-center text-secondary">Sucesso nas vendas(%)</h5>
+            <h5 className="text-center color-primary">Sucesso nas vendas(%)</h5>
 
             <BarChart />
 
@@ -24,8 +24,8 @@ function App() {
 
           <div className="col-sm-6">
 
-            <h5 className="text-center text-secondary">Valor total por vendedor (%)</h5>
-          
+            <h5 className="text-center color-primary">Valor total por vendedor (%)</h5>
+
             <DonutChart />
           </div>
         </div>

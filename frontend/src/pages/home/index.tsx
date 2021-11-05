@@ -10,18 +10,20 @@ const Home = () => {
 
             <div className="container">
                 <div className="jumbotron">
-                    <h1 className="text-left display-4">RSVendas</h1>
-                    <p className="text-left lead">Análise o desempenho das suas vendas por diferentes perspectivas.</p>
+                    
+                    <h1 className="text-center display-4">RSVendas</h1>
+                    <p className="text-center lead">Analise o desempenho das suas vendas por diferentes perspectivas.</p>
                     <hr />
 
-                    <p className="text-left">Esta aplicação consiste em exibir um dashboard a partir de dados fornecidos por um back end construído com Spring Boot.</p>
+                    <p className="text-center">Esta aplicação consiste em exibir um dashboard a partir de dados fornecidos por um back end construído com Spring Boot.</p>
                     <p></p>
                
-                <Link className= "btn btn-outline-dark btn-lg btn-block" to = "/dashboard">
+               <div className="d-grid gap-2">
+                <Link className= "btn btn-outline-danger btn-lg btn-block" to = "/dashboard">
                     Acessar o Dashboard
                 </Link>
                
-               
+                </div>
                
                 </div>
             </div>

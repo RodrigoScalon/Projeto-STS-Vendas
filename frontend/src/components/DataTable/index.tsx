@@ -3,10 +3,13 @@ import { useEffect, useState } from "react";
 import { SalePage } from "types/sale";
 import { BASE_URL } from "utils/requests";
 import { formatLocalDate } from "utils/format";
+import Pagination from "components/Pagination";
 
 const DataTable = () => {
 
+    const [activePage, setActivePage] = useState(0);
     const [page, setPage] = useState<SalePage>({
+      
         first: true,
         last: true,
         number: 0,
@@ -17,45 +20,51 @@ const DataTable = () => {
 
 
     useEffect(() => {
-        axios.get(`${BASE_URL}/sales?page=0&size5&sort=date,desc`)
+
+        axios.get(`${BASE_URL}/sales?page=${activePage}&size5&sort=date,desc`)
             .then(response => {
                 setPage(response.data);
             });
-    }, []);
+    }, [activePage]);
 
-
+    const chagePage = (index: number) => {
+        setActivePage(index);
+    }
     return (
+        <>
+            <Pagination page={page} onPageChange={chagePage} />
 
-        <div className="table-responsive">
-            <table className="table table-striped table-sm">
-                <thead>
-                    <tr>
-                        <th>Data</th>
-                        <th>Vendedor</th>
-                        <th>Clientes Vistados</th>
-                        <th>Negócios Fechados</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    {page.content?.map(item => (
-
-                        <tr key= {item.id}>
-                            <td>{formatLocalDate(item.date, "dd/MM/yyyy")}</td>
-                            <td>{item.seller.name}</td>
-                            <td>{item.visited}</td>
-                            <td>{item.deals}</td>
-                            <td>{item.amount.toFixed(2)}</td>
-
+            <div className="table-responsive">
+                <table className="table table-striped table-sm">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Vendedor</th>
+                            <th>Clientes Vistados</th>
+                            <th>Negócios Fechados</th>
+                            <th>Valor</th>
                         </tr>
+                    </thead>
+
+                    <tbody>
+                        {page.content?.map(item => (
+
+                            <tr key={item.id}>
+                                <td>{formatLocalDate(item.date, "dd/MM/yyyy")}</td>
+                                <td>{item.seller.name}</td>
+                                <td>{item.visited}</td>
+                                <td>{item.deals}</td>
+                                <td>{item.amount.toFixed(2)}</td>
+
+                            </tr>
 
 
-                    ))}
+                        ))}
 
-                </tbody>
-            </table>
-        </div >
+                    </tbody>
+                </table>
+            </div >
+        </>
     );
 }
 

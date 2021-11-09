@@ -4,6 +4,7 @@ Projeto Resultado de Vendas. Utilizado REACT no frontend e Spring Boot no backen
 O programa demonstra ao usuário o resultado das vendas de diversos funcionários por diferentes perspectivas.
 
 PS: o carregamento do BD pode demorar uns segundos.
+
 Link: https://rsvendas-rodrigoscalon.netlify.app
 
 
